@@ -1,4 +1,5 @@
 # Sign-Language-MNIST-Neural-Network-Classifier
+
 📌 Description
 This project trains and evaluates a neural network classifier using scikit-learn’s MLPClassifier to recognize American Sign Language (ASL) letters from the Sign Language MNIST dataset.
 The dataset consists of grayscale 28×28 pixel images of hand signs representing letters A–Y (excluding J and Z in many versions). The network learns to distinguish between 13 balanced classes in this version of the dataset.
