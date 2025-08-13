@@ -1,18 +1,18 @@
 # Sign-Language-MNIST-Neural-Network-Classifier
 
-# 📌 What my project is / does
+## 📌 What my project is / does
 This project, Sign Language MNIST Neural Network Classifier, is a machine learning program that recognizes American Sign Language (ASL) hand signs from images.
 It uses the Sign Language MNIST dataset, where each grayscale image represents a letter, and trains a neural network to classify them.
 The model outputs overall accuracy, per-class accuracy, and identifies which signs are most often confused with others.
 
-# 🎯 Why I made my project
+## 🎯 Why I made my project
 I wanted to combine computer vision and machine learning to solve a real-world communication challenge: recognizing sign language.
 This project was a chance to practice:
   Loading and preparing image datasets in CSV format
   Building and tuning a neural network from scratch with scikit-learn
   Analyzing model performance beyond just accuracy (confusion matrix, misidentifications)
 
-# 🛠 How I made my project
+## 🛠 How I made my project
 1. Data Preparation
   Used pandas to load sign_mnist_13bal_train.csv and sign_mnist_13bal_test.csv.
   Normalized pixel values to a 0–1 range for better model stability.
