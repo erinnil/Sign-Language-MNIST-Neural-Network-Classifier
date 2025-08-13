@@ -88,4 +88,5 @@ Remaining columns: flattened pixel values (0–255) for each image
   The dataset is balanced — results may vary with unbalanced datasets.
   You can adapt the script for more classes by changing the dataset.
 
+[![Athena Award Badge](https://img.shields.io/endpoint?url=https%3A%2F%2Faward.athena.hackclub.com%2Fapi%2Fbadge)](https://award.athena.hackclub.com?utm_source=readme) 
 
