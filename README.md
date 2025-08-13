@@ -29,7 +29,7 @@ This project was a chance to practice:
   Generated a confusion matrix to see common mistakes.
   Identified the 3 most misidentified classes and what they’re usually confused with.
 
-# ⚠️ What I struggled with & what I learned
+## ⚠️ What I struggled with & what I learned
 Struggles:
 At first, training accuracy was high but validation accuracy lagged, classic overfitting.
 Balancing the hidden layer size and training iterations to get good accuracy without long training times.
@@ -42,27 +42,27 @@ Adding a validation split helps tune models more effectively and avoid overfitti
 The confusion matrix is a powerful tool for diagnosing where and why the model is wrong.
 Even with good accuracy, some sign letters are naturally harder to distinguish (like visually similar hand shapes).
 
-# The script:
+## The script:
 Loads balanced training and testing CSV datasets.
 Splits the training set into training and validation subsets.
 Normalizes pixel values to [0, 1] for better training stability.
 Trains an MLP (Multi-layer Perceptron) with 64 hidden neurons.
 
-# Reports:
+## Reports:
 Training, validation, and test accuracies
 Per-class test accuracies
 The top 3 most misidentified classes and their most common confusions
 
-# 📂 Dataset Requirements
+## 📂 Dataset Requirements
 You’ll need two CSV files in the working directory:
 sign_mnist_13bal_train.csv — balanced training dataset
 sign_mnist_13bal_test.csv — balanced testing dataset
 
-# Each CSV should contain:
+## Each CSV should contain:
 First column: class — integer label representing the letter’s class
 Remaining columns: flattened pixel values (0–255) for each image
 
-# ⚙️ How It Works
+## ⚙️ How It Works
 1. Data Loading & Normalization
   Loads CSV files with Pandas.
   Separates features (X) and labels (y).
@@ -83,35 +83,7 @@ Remaining columns: flattened pixel values (0–255) for each image
   Calculates per-class accuracy.
   Generates a confusion matrix to find the 3 most misidentified classes and their most common wrong predictions.
 
-📊 Example Output
-  yaml
-  Copy
-  Edit
-  Training set size: 8320
-  Validation set size: 2080
-  Test set size: 2600
-  Layer sizes: 784 x 64 x 13
-  ----------
-  Training Accuracy: 99.5%
-  Validation Accuracy: 95.7%
-  Test Accuracy: 96.2%
-  ----------
-  Per-class Test Accuracies:
-  Class 0: 98%
-  Class 1: 95%
-  ...
-  ----------
-  Most Misidentified Classes (letters):
-  Class 2: 8.3% misidentification rate
-  Class 5: 7.1% misidentification rate
-  Class 9: 6.8% misidentification rate
-  ----------
-
-# Common Misidentifications:
-Class 2 most often confused with: Class 7 (15 times), Class 8 (10 times)
-...
-
-# 📌 Notes
+## 📌 Notes
   The hidden layer size (64) can be tuned for speed vs. accuracy.
   The dataset is balanced — results may vary with unbalanced datasets.
   You can adapt the script for more classes by changing the dataset.
