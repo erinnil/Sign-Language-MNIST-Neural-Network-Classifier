@@ -42,7 +42,7 @@ Adding a validation split helps tune models more effectively and avoid overfitti
 The confusion matrix is a powerful tool for diagnosing where and why the model is wrong.
 Even with good accuracy, some sign letters are naturally harder to distinguish (like visually similar hand shapes).
 
-## The script:
+## The Script:
 Loads balanced training and testing CSV datasets.
 Splits the training set into training and validation subsets.
 Normalizes pixel values to [0, 1] for better training stability.
